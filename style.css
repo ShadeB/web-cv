@@ -28,6 +28,7 @@ body {
 	color: #000;
 	font-size: 2.5rem;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 header {
@@ -49,4 +50,49 @@ header {
 	height: 2rem;
 	margin-left: 0.8rem;
 	color: purple;
+}
+
+section {
+	font-weight: 300;
+	margin-top: 2rem;
+	padding: 2rem;
+}
+
+section p {
+	margin-top: 1rem;
+}
+
+.section-heading {
+	text-align: left;
+}
+
+.section-icon {
+	padding: 0.5rem;
+	margin-right: 1rem;
+	border-radius: 50%;
+	background-color: #800080;
+	color: #fff;
+}
+
+.section-icon svg {
+	width: 2.5rem;
+	height: 2.5rem;
+	vertical-align: middle;
+}
+
+.certification {
+	margin-top: 2rem;
+}
+
+.certification span {
+	font-weight: 800;
+	font-size: 1.8rem;
+}
+
+.sub-heading {
+	color: #800080;
+}
+
+.course-duration {
+	font-weight: 400;
 }
