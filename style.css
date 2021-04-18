@@ -67,6 +67,7 @@ section p {
 }
 
 .section-icon {
+	display: inline-flex;
 	padding: 0.5rem;
 	margin-right: 1rem;
 	border-radius: 50%;
@@ -90,9 +91,18 @@ section p {
 }
 
 .sub-heading {
+	margin-top: 2rem;
+	font-size: 2rem;
+	text-transform: capitalize;
 	color: #800080;
 }
 
 .course-duration {
 	font-weight: 400;
+}
+
+.project-link {
+	font-weight: 400;
+	font-size: 1.8rem;
+	color: rgba(0, 0, 255, 0.76);
 }
