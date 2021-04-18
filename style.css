@@ -106,3 +106,20 @@ section p {
 	font-size: 1.8rem;
 	color: rgba(0, 0, 255, 0.76);
 }
+
+.skills-list {
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 1rem;
+	column-gap: 5rem;
+}
+
+.skills-list li {
+	list-style-type: disc;
+	font-weight: 400;
+}
+
+.skills-list li::marker {
+	color: #800080;
+}
