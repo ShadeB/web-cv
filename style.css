@@ -37,7 +37,9 @@ header {
 }
 
 .info-link {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2rem 1fr;
+	gap: 2rem;
 	margin: 1rem 0;
 }
 
@@ -48,7 +50,8 @@ header {
 .info-link svg {
 	width: 2.5rem;
 	height: 2rem;
-	margin-left: 0.8rem;
+	margin-right: 1rem;
+	order: -1;
 	fill: purple;
 }
 
@@ -124,6 +127,51 @@ section p {
 	color: #800080;
 }
 
+@media screen and (min-width: 475px) {
+	.name {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.certification {
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.certification span {
+		margin-left: 2.5rem;
+	}
+
+	.project-info {
+		margin-top: 2rem;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.project-info .sub-heading {
+		margin-top: 0;
+	}
+
+	.project-info .project-link {
+		margin-left: 2.5rem;
+	}
+
+	.sub-heading {
+		position: relative;
+	}
+
+	.sub-heading::after {
+		position: absolute;
+		content: '';
+		width: 0.3rem;
+		height: 100%;
+		background: purple;
+		right: -1.5rem;
+		top: 0;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	body {
 		font-size: 2rem;
@@ -141,12 +189,6 @@ section p {
 
 	.info-links-container {
 		margin-top: 2rem;
-	}
-
-	.info-link {
-		flex-direction: row-reverse;
-		justify-content: flex-end;
-		align-items: end;
 	}
 
 	.info-link svg {
@@ -178,7 +220,8 @@ section p {
 	}
 
 	.info-link {
-		flex-direction: row;
+		display: flex;
+		flex-direction: row-reverse;
 	}
 
 	.info-link svg {
